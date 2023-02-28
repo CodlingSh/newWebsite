@@ -6,61 +6,353 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sheldon Codling</title>
     <link rel="stylesheet" href="css/main.css">
+    <style id="jsStyle">
+        
+    </style>
 </head>
 <body>
     
     <nav>
-        <h1 id="name">Sheldon Codling</h1>
-        <div id="navBtn">
-            <img src="assets/icons/menu.svg" width="39" height="39">
+        <div id="navContainer">
+            <h1 id="name">Sheldon Codling</h1>
+            <div class="desktop">
+                <ul>
+                    <li><a id="homeLink" class="active" href="#">Home</a></li>
+                    <li><a id="aboutLink" href="#about">About</a></li>
+                    <li><a id="skillsLink" href="#skills">Skills</a></li>
+                    <li><a id="projectLink" href="#projects">Projects</a></li>
+                    <li><a id="contactLink" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="mobile">
+                <div id="navBtn">
+                    <img src="assets/icons/menu.svg" width="39" height="39">
+                </div>
+            </div>
         </div>
     </nav>
 
     <section id="navMenu">
-
+        <p>Ligma</p>
     </section>
 
     <div id="opacityLayer"></div>
 
-    <header>
+    <header id="landing">
         <div id="outerHexagon">
             <div id="innerHexagon"></div>
         </div>
-        <div id="introText">
-            <h2>Sheldon Codling</h2>
-            <p>Full-stack web developer with a specialization in front-end and back-end web development. Adaptable to new technology to enhance my skills and capabilities.</p>
+        <div id="sideSect">
+            <div id="introText">
+                <h1>Hello!<br>I'm Sheldon Codling</h1>
+                <p>A passionate full stack web developer from Sarnia, Canada</p>
+                <!-- <p>Welcome to my website! My name is Sheldon Codling and I am a full-stack web developer from Sarnia, Ontario with a passion for creating visually stunning and functional websites and web apps.</p> -->
+                <!-- <p>Welcome to my website! My name is Sheldon Codling and I am a full-stack web developer from Sarnia, Ontario with a passion for creating visually stunning and functional websites. I have a strong foundation in HTML, CSS, JavaScript, and Python and am always eager to learn.</p> -->
+            </div>
+            <div id="btnGroup">
+                <a href="#projects" class="btn heroBtn"><img src="assets/icons/myProjects.svg">See My Work</a>
+                <a href="#" class="btn heroBtn"><img src="assets/icons/myResume.svg">View Resume</a>
+            </div>
         </div>
     </header>
 
     <main>
-        <div class="sectContainer">
-            <section id="about" class="mainSect" style="background-color: blue;">
-                <a href="www.google.com">CLICK HERE!</a>
+        <section id="about" class="mainSect">
+            <div id="aboutSect" class="innerSectContainer">
+                <h2 class="sectTitle">About Me</h2>
                 <p>Since I was four years old, I have always enjoyed working, playing, and creating on computers. Memories of our family-owned 386-based PC are still fresh in my mind, as it gave me my first exposure to the world of computers. From those humble beginnings, I developed a deep understanding of several Linux distributions and Windows. Consequently, my love for computers has been growing ever since.</p>
                 <p>My computer-relevant post-secondary educational background dates back to 2013, where I took the “Computer Network Specialist” course at Lambton College. In that program, I studied system repair, Network Setup, Cisco equipment, and computer/server maintenance. After a few years of few years of saving up money, I decided to further my education by enrolling in the “Computer Programmer” course at Lambton College.</p>
-                <p>As of writing, I am a recent graduate of the “Computer Programmer” course. My formal training has laid a solid foundation that I hope to build on in my future career. Through the course, I have gained an in-depth understanding of HTML5/CSS3, JavaScript/jQuery, Python, and SQL. Additionally, I have acquired self-taught skills in Lua, C, and Bash.</p>
-                <p>I have created a notable reputation and tech presence for people I've interacted with through my programming life. Some of my achievements include designing, coding, and maintaining a website for a local business and a JavaScript-based password generator that I use to generate all my passwords.</p>
-                <p>For me, the sky is the limit, and I hope to live to embrace the core values of innovation and technology. When I’m not studying or programming, I enjoy playing video games, graphic design, mountain biking, playing chess, watching action or sci-fi movies, and toying around with Linux distributions.</p>
-                <p>Thanks for taking the time to get to know me better. If you have any questions for me, please contact me.</p>
-            </section>
-            <div class="underSect"></div>
-        </div>
+                <p>More recently though, I decided to go back to Lambton College to attend their “Computer Programmer” course. Through the course, I have gained an in-depth understanding of HTML5/CSS3, JavaScript, Python, and SQL. Additionally, I have acquired self-taught skills in Lua and Bash.</p>
+                <p>I have created a notable reputation and tech presence for people I've interacted with through my programming life. Some of my achievements include designing, coding, and maintaining a website for a local business and a local password generator that I use to generate all my passwords.</p>
+                <p>Outside of web development, I also enjoy playing video games, mountain biking, watching action or sci-fi movies, growing peppers and playing around with Linux distributions.</p>
+                <p>Thanks for taking the time to get to know me better. If you have any questions for me, please don't hesitate to contact me.</p>
+            </div>
+        </section>
 
-        <div class="sectContainer">
-            <section id="test" class="mainSect" style="background-color: red;">
-                <a href="www.google.com">CLICK HERE!</a>
-                <p>Since I was four years old, I have always enjoyed working, playing, and creating on computers. Memories of our family-owned 386-based PC are still fresh in my mind, as it gave me my first exposure to the world of computers. From those humble beginnings, I developed a deep understanding of several Linux distributions and Windows. Consequently, my love for computers has been growing ever since.</p>
-                <p>My computer-relevant post-secondary educational background dates back to 2013, where I took the “Computer Network Specialist” course at Lambton College. In that program, I studied system repair, Network Setup, Cisco equipment, and computer/server maintenance. After a few years of few years of saving up money, I decided to further my education by enrolling in the “Computer Programmer” course at Lambton College.</p>
-                <p>As of writing, I am a recent graduate of the “Computer Programmer” course. My formal training has laid a solid foundation that I hope to build on in my future career. Through the course, I have gained an in-depth understanding of HTML5/CSS3, JavaScript/jQuery, Python, and SQL. Additionally, I have acquired self-taught skills in Lua, C, and Bash.</p>
-                <p>I have created a notable reputation and tech presence for people I've interacted with through my programming life. Some of my achievements include designing, coding, and maintaining a website for a local business and a JavaScript-based password generator that I use to generate all my passwords.</p>
-                <p>For me, the sky is the limit, and I hope to live to embrace the core values of innovation and technology. When I’m not studying or programming, I enjoy playing video games, graphic design, mountain biking, playing chess, watching action or sci-fi movies, and toying around with Linux distributions.</p>
-                <p>Thanks for taking the time to get to know me better. If you have any questions for me, please contact me.</p>
-            </section>
-            <div class="underSect"></div>
-        </div>
+        <section id="skills" class="mainSect">
+            <div id="skillSect" class="innerSectContainer">
+                <h2 class="sectTitle">My Skills</h2>
 
+                <h3 class="skillGroupTitle">Programming Langauges</h3>
+                <div class="skillGroup">
+                    <div class="box skillBox">
+                        <img src="/assets/icons/CS.svg">
+                        <h3>C#</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/Java-Light.svg">
+                        <h3>Java</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/JavaScript.svg">
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/Lua-Light.svg">
+                        <h3>Lua</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/Python-Light.svg">
+                        <h3>Python</h3>
+                    </div>
+                </div>
+
+                <h3 class="skillGroupTitle">Front-End</h3>
+                <div class="skillGroup">
+                    <div class="box skillBox">
+                        <img src="/assets/icons/Bootstrap.svg">
+                        <h3>Bootstrap</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/CSS.svg">
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/HTML.svg">
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/React-Light.svg">
+                        <h3>React</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/TailwindCSS-Light.svg">
+                        <h3>Tailwind CSS</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/Wordpress.svg">
+                        <h3>WordPress</h3>
+                    </div>
+                </div>
+
+                <h3 class="skillGroupTitle">Back-End and Databases</h3>
+                <div class="skillGroup">
+                    <div class="box skillBox">
+                        <img src="/assets/icons/Django.svg">
+                        <h3>Django</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/DotNet.svg">
+                        <h3>ASP.NET</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/Flask-Light.svg">
+                        <h3>Flask</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/MongoDB.svg">
+                        <h3>MongoDB</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/Netlify-Light.svg">
+                        <h3>Netlify</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/NodeJS-Light.svg">
+                        <h3>Node.js</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/MySQL-Light.svg">
+                        <h3>MySQL</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/Spring-Light.svg">
+                        <h3>Spring</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/SQLite.svg">
+                        <h3>SQLite</h3>
+                    </div>
+                </div>
+
+                <h3 class="skillGroupTitle">Other Tech Skills</h3>
+                <div class="skillGroup">
+                    <div class="box skillBox">
+                        <img src="/assets/icons/Arduino.svg">
+                        <h3>Arduino</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/AWS-Light.svg">
+                        <h3>AWS</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/GIMP.svg">
+                        <h3>G.I.M.P</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/Git.svg">
+                        <h3>Git</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/Inkscape_Logo.svg">
+                        <h3>Inkscape</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/Kdenlive.svg">
+                        <h3>KDENLive</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/Linux-Light.svg">
+                        <h3>Linux</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/RaspberryPi-Light.svg">
+                        <h3>Raspberry Pi</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/VIM-Light.svg">
+                        <h3>Vim</h3>
+                    </div>
+                    <div class="box skillBox">
+                        <img src="/assets/icons/VSCode-Light.svg">
+                        <h3>VS Code</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mainSect">
+            <div class="innerSectContainer">
+                <h2 class="centeredTitle sectTitle">My Projects</h2>
+
+                <div class="projects">
+                    <!-- <div class="projectContainer"> -->
+                        <div class="box projectBox">
+                            <div class="closeBtn">
+                                <img src="/assets/icons/x.svg">
+                            </div>
+                            <div class="projectBG"></div>
+                            <img src="assets/images/projects/Lions.jpg">
+                            <h2 class="projectTitle">Lions Eyes Right</h2>
+                            <p class="headline visibleText">A website I made the help promote the District A1 Lions Club's Eyes Right project.</p>
+                            <div class="hiddenText">
+                                <p>"Eyes Right" is a registered charity organization under the jurisdiction of the District A1 Lions Club in Southwestern Ontario. This charity aims to raise funds for eye care initiatives in the region. My grandfather was a prominent member of the Sarnia branch of the Lions Club and held the position of District Governor from 2008 to 2009, thus giving me firsthand insight into the organization and instilling in me a deep admiration for their work.</p>
+                                <p>I was eager to contribute when the opportunity arose to create a website for the charity. I am immensely proud of the final product, which stands as my favorite among all the static websites I have designed. Not only does the website serve a worthwhile cause, but it is also aesthetically pleasing in its design. This project also allowed me to gain extensive knowledge of responsive design and experience working with a large number of stakeholders</p>
+                            </div>
+                            <p class="btn projectBtn visibleText">More Info</p>
+                        </div>
+                    <!-- </div> -->
+
+                    <!-- <div class="projectContainer"> -->
+                        <div class="box projectBox">
+                            <div class="closeBtn">
+                                <img src="/assets/icons/x.svg">
+                            </div>
+                            <div class="projectBG"></div>
+                            <img src="assets/images/projects/BrandonDoes.jpg">
+                            <h2 class="projectTitle"> Brandon Does Yoga</h2>
+                            <p class="headline visibleText">A website I made to help advertise my friend's yoga practice.</p>
+                            <p class="hiddenText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi iure voluptatum animi incidunt sint quibusdam nulla nisi perferendis tempore eveniet velit recusandae quod mollitia praesentium adipisci quisquam, libero nam corrupti?</p>
+                            <p class="btn projectBtn visibleText">More Info</p>
+                        </div>
+                    <!-- </div> -->
+
+                    <!-- <div class="projectContainer"> -->
+                        <div class="box projectBox">
+                            <div class="closeBtn">
+                                <img src="/assets/icons/x.svg">
+                            </div>
+                            <div class="projectBG"></div>
+                            <img src="assets/images/projects/KMT.jpg">
+                            <h2 class="projectTitle">Kip's Media Transfers</h2>
+                            <p class="headline visibleText">A website I made the help advertise my cousin's media transfer business</p>
+                            <div class="hiddenText">
+                                <p>"Eyes Right" is a registered charity that is administered by my local Lions Club district that focuses on raising funds to promote eye care for south western Ontario. When I was growing up, my Grandpa was heavily involved with the Lions Club, to the point that he was elected to be the leader of our district from 2008 to 2009, so I have always been a little privy as to what him and the other Lions Club members were up to and I have devolped a great amount of respect for the work the District A1 Lions Club does. So when the opportunity came to make a website for them, I naturally jumped right into it.</p>
+                                <p>I am really proud of this website overall. Out of all the static websites I have made, this is easily my favorite. Not only is it for a great cause, but the end result is really aesthetically pleasing to look at. I also learned a lot about responsive design and what goes into working with a large amount of shareholders.</p>
+                            </div>
+                            <p class="btn projectBtn visibleText">More Info</p>
+                        </div>
+                    <!-- </div> -->
+
+                    <!-- <div class="projectContainer"> -->
+                        <div class="box projectBox">
+                            <div class="closeBtn">
+                                <img src="/assets/icons/x.svg">
+                            </div>
+                            <div class="projectBG"></div>
+                            <img src="assets/images/projects/Lions.jpg">
+                            <h2 class="projectTitle">Lions Eyes Right</h2>
+                            <p class="headline visibleText">A website I made the help promote the District A1 Lions Club's Eyes Right project.</p>
+                            <p class="hiddenText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi iure voluptatum animi incidunt sint quibusdam nulla nisi perferendis tempore eveniet velit recusandae quod mollitia praesentium adipisci quisquam, libero nam corrupti?</p>
+                            <p class="btn projectBtn visibleText">More Info</p>
+                        </div>
+                    <!-- </div> -->
+
+                    <!-- <div class="projectContainer"> -->
+                        <div class="box projectBox">
+                            <div class="closeBtn">
+                                <img src="/assets/icons/x.svg">
+                            </div>
+                            <div class="projectBG"></div>
+                            <img src="assets/images/projects/Lions.jpg">
+                            <h2 class="projectTitle">Lions Eyes Right</h2>
+                            <p class="headline visibleText">A website I made the help promote the District A1 Lions Club's Eyes Right project.</p>
+                            <p class="hiddenText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi iure voluptatum animi incidunt sint quibusdam nulla nisi perferendis tempore eveniet velit recusandae quod mollitia praesentium adipisci quisquam, libero nam corrupti?</p>
+                            <p class="btn projectBtn visibleText">More Info</p>
+                        </div>
+                    <!-- </div> -->
+
+                    <!-- <div class="projectContainer"> -->
+                        <div class="box projectBox">
+                            <div class="closeBtn">
+                                <img src="/assets/icons/x.svg">
+                            </div>
+                            <div class="projectBG"></div>
+                            <img src="assets/images/projects/Lions.jpg">
+                            <h2 class="projectTitle">Lions Eyes Right</h2>
+                            <p class="headline visibleText">A website I made the help promote the District A1 Lions Club's Eyes Right project.</p>
+                            <p class="hiddenText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi iure voluptatum animi incidunt sint quibusdam nulla nisi perferendis tempore eveniet velit recusandae quod mollitia praesentium adipisci quisquam, libero nam corrupti?</p>
+                            <p class="btn projectBtn visibleText">More Info</p>
+                        </div>
+                    <!-- </div> -->
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="mainSect">
+
+            <div class="innerSectContainer">
+                <form name='contactForm' method='POST'><input type='hidden' name='form-name' value='contact' />
+                    <h2 class="centeredTitle sectTitle">Contact Me</h2>
+                    <!-- Name -->
+                    <div class="inputContainer">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <!-- Email -->
+                    <div class="inputContainer">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                    <!-- Message -->
+                    <div class="inputContainer">
+                        <label for="messageBox">Your Message</label>
+                        <textarea id="messageBox" name="messageBox" rows="8"></textarea>
+                    </div>
+                    <!-- Submit Button -->
+                    <input type="submit" id="submitBtn" class="btn projectBtn" value="Send Message">
+                </form>
+            </div>
+        </section>
     </main>
+
+    <footer><p>2023 Sheldon Codling</p></footer>
+
+    <script>
+        // function resetHeight(){
+        // // reset the body height to that of the inner browser
+        // document.getElementById("landing").style.height = "calc(" + window.innerHeight + "px - 52px)";
+        // }
+        // // reset the height whenever the window's resized
+        // // window.addEventListener("resize", resetHeight);
+        // // called to initially set the height.
+        // resetHeight();
+    </script>
     
-    <script src="assets/scripts/mobileNav.js"></script>
+    <script src="scripts/animate.js"></script>
+    <script src="scripts/scrollCheck.js"></script>
+    <script src="scripts/mobileNav.js"></script>
+    <script src="scripts/projects3.js"></script>
 </body>
 </html>
