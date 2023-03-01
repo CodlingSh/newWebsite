@@ -18,6 +18,7 @@ const toggleOpacityLayer = () => {
 const toggleMenu = () => {
     document.body.classList.toggle("menuVisible");
     toggleOpacityLayer();
+    opacityLayer.style.zIndex = 6502;
 }
 
 // const toggleOpacityLayer = () => {
